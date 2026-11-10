@@ -1,0 +1,17 @@
+[model]
+n_layers = 24
+d_model = 1280
+n_heads = 20
+vocab_size = 32000
+context = 2048
+
+[train]
+batch_size = 8
+grad_accum = 8
+lr = 3e-4
+warmup_steps = 2000
+max_steps = 100000
+weight_decay = 0.1
+eval_interval = 1000
+eval_batches = 50
+seed = 1337
