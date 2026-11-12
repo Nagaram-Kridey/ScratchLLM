@@ -10,6 +10,7 @@ from typing import Iterator
 import torch
 
 from .data import write_split
+from .sample import generate
 from .tokenizer import Tokenizer
 
 
@@ -27,6 +28,14 @@ def encode_prompt(history, user: str, tok: Tokenizer) -> list[int]:
     """Token ids that end ready for the model to write the next reply."""
     s = tok.special
     return encode_chat(history, tok) + [s["<|user|>"], *tok.encode(user), s["<|end|>"], s["<|assistant|>"]]
+
+
+def chat_reply(model, tok: Tokenizer, history, user: str, *, max_new_tokens: int = 80, **sampling) -> tuple[str, bool]:
+    """The model's reply to user, and whether it ended the reply itself with <|end|>."""
+    new = generate(
+        model, encode_prompt(history, user, tok), max_new_tokens, stop_id=tok.special["<|end|>"], **sampling
+    )
+    return tok.decode(new).strip(), len(new) < max_new_tokens
 
 
 def _reply_open(ids: torch.Tensor, assistant_id: int, end_id: int) -> torch.Tensor:

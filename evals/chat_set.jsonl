@@ -1,0 +1,50 @@
+{"question": "What sound does a dog make?", "accepted": ["woof", "bark"]}
+{"question": "What sound does a cat make?", "accepted": ["meow", "purr"]}
+{"question": "What sound does a cow make?", "accepted": ["moo"]}
+{"question": "What animal gives us milk?", "accepted": ["cow", "goat"]}
+{"question": "What animal says quack?", "accepted": ["duck"]}
+{"question": "Where do fish live?", "accepted": ["water", "sea", "river", "ocean"]}
+{"question": "What do bees make?", "accepted": ["honey"]}
+{"question": "How many legs does a dog have?", "accepted": ["four", "4"]}
+{"question": "What animal has a very long neck?", "accepted": ["giraffe"]}
+{"question": "What do birds use to fly?", "accepted": ["wing"]}
+{"question": "What colour is the sky on a sunny day?", "accepted": ["blue"]}
+{"question": "What colour is grass?", "accepted": ["green"]}
+{"question": "What colour is snow?", "accepted": ["white"]}
+{"question": "What colour is a banana?", "accepted": ["yellow"]}
+{"question": "What colour is milk?", "accepted": ["white"]}
+{"question": "What do you use to cut paper?", "accepted": ["scissors"]}
+{"question": "What do you sleep on at night?", "accepted": ["bed"]}
+{"question": "What do you wear on your feet?", "accepted": ["shoe", "sock", "boot"]}
+{"question": "What do you use to write on paper?", "accepted": ["pen", "crayon"]}
+{"question": "What do you drink water from?", "accepted": ["cup", "glass", "bottle"]}
+{"question": "What is one plus one?", "accepted": ["two", "2"]}
+{"question": "What is two plus two?", "accepted": ["four", "4"]}
+{"question": "What is three plus two?", "accepted": ["five", "5"]}
+{"question": "What is five plus five?", "accepted": ["ten", "10"]}
+{"question": "What number comes after three?", "accepted": ["four", "4"]}
+{"question": "What number comes after nine?", "accepted": ["ten", "10"]}
+{"question": "What number comes before six?", "accepted": ["five", "5"]}
+{"question": "How many days are in a week?", "accepted": ["seven", "7"]}
+{"question": "How many fingers are on one hand?", "accepted": ["five", "5"]}
+{"question": "What is ten take away one?", "accepted": ["nine", "9"]}
+{"question": "What is the opposite of hot?", "accepted": ["cold"]}
+{"question": "What is the opposite of big?", "accepted": ["small", "little"]}
+{"question": "What is the opposite of up?", "accepted": ["down"]}
+{"question": "What is the opposite of day?", "accepted": ["night"]}
+{"question": "What is the opposite of happy?", "accepted": ["sad", "unhappy"]}
+{"question": "What is the opposite of fast?", "accepted": ["slow"]}
+{"question": "What is the opposite of wet?", "accepted": ["dry"]}
+{"question": "What is the opposite of open?", "accepted": ["close", "shut"]}
+{"question": "What is the opposite of light?", "accepted": ["dark", "heavy"]}
+{"question": "What is the opposite of full?", "accepted": ["empty"]}
+{"question": "What is a river?", "accepted": ["water"]}
+{"question": "What is a tree?", "accepted": ["plant", "leaves", "wood"]}
+{"question": "What is rain?", "accepted": ["water", "drops"]}
+{"question": "What is the sun?", "accepted": ["star", "light", "sky"]}
+{"question": "What is a book?", "accepted": ["read", "pages", "story", "stories"]}
+{"question": "What is a house?", "accepted": ["live", "home", "building"]}
+{"question": "What is a chair?", "accepted": ["sit", "seat"]}
+{"question": "What is a baby?", "accepted": ["young", "small", "little", "child"]}
+{"question": "What is a school?", "accepted": ["learn", "teach", "study"]}
+{"question": "What is a doctor?", "accepted": ["sick", "health", "help", "medicine"]}
