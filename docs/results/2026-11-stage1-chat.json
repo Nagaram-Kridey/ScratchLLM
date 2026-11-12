@@ -1,0 +1,331 @@
+{
+  "chat": [
+    {
+      "correct": false,
+      "question": "What sound does a dog make?",
+      "reply": "A dog is a regular sound that helps people and animals. It can help make them feel free and feel free.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What sound does a cat make?",
+      "reply": "A cat is a regular sound that helps you with a sound, a sound, and even a sound sound.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What sound does a cow make?",
+      "reply": "A cow is a very popular, with a long tail and a long tail.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What animal gives us milk?",
+      "reply": "Consider is a great choice form of energy. It's a great way to keep your food organized and healthy.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What animal says quack?",
+      "reply": "Currently, 4-100, 4, 70, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,",
+      "stopped": false
+    },
+    {
+      "correct": true,
+      "question": "Where do fish live?",
+      "reply": "The fish's home is a place where people live in the sea. It's a place where people live and can't swim.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What do bees make?",
+      "reply": "The bees can be very helpful.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "How many legs does a dog have?",
+      "reply": "The dog is a good idea. It helps the dog with its nose and nose.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What animal has a very long neck?",
+      "reply": "A short, long neck is a small, round, and has a long tail. It can be a lot of fun to play with.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What do birds use to fly?",
+      "reply": "You can also use a high-mon-friendly, a high-mon, and a low-mon.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What colour is the sky on a sunny day?",
+      "reply": "The sun is shining in the sky, with a high of a high of the sun and a high of a high of the sun.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What colour is grass?",
+      "reply": "A color is a color of color, with a bright colors and a bright colors.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What colour is snow?",
+      "reply": "A snow is a place where snow is a place where people grow and in the world, and sometimes in the world, like the sun and the birds.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What colour is a banana?",
+      "reply": "A banana is a banana. It is a banana with a high-mon and has a high-mon.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What colour is milk?",
+      "reply": "Currently, a pot of milk, and a pot of milk.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What do you use to cut paper?",
+      "reply": "You can use a cut paper or a cut paper or a cut paper. You can also use a cut paper or a cut paper to make a cut.",
+      "stopped": true
+    },
+    {
+      "correct": true,
+      "question": "What do you sleep on at night?",
+      "reply": "I's sleep every night's sleep is a good idea. It's a good idea to sleep in your bed and sleep in your bed.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What do you wear on your feet?",
+      "reply": "I'm just a way to wear a hat or a hat. It's a good idea to wear a hat and a hat with a hat and a hat.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What do you use to write on paper?",
+      "reply": "You can write down the paper or a paper or a paper or a paper or a paper. You can also use a paper or a paper or a paper to make a picture.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What do you drink water from?",
+      "reply": "I'm just a way to drink water, but I can help you with that.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is one plus one?",
+      "reply": "A main is a main, with a high-mic head and a low-mic. It's a high-mar and has a low-mic head.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is two plus two?",
+      "reply": "The main difference is the main difference of the world, with a high-met system. It's a high-mon-free and has a high-mon-friendly.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is three plus two?",
+      "reply": "The most popular main difference is the most popular options for the most popular options.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is five plus five?",
+      "reply": "Currently, which are also a main, with a main, and a main, while a main, a main, and a main, while a main, the main, is the main, and the main.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What number comes after three?",
+      "reply": "Consider is a great number of numbers, but it's not easy to find out. It's a good idea to ask for help.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What number comes after nine?",
+      "reply": "You can start by using the number of numbers, where the number is on the number of numbers, and the number numbers on the number.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What number comes before six?",
+      "reply": "Consider is a great number of numbers. It's a number that has a number on the other side, and it's a good idea to start with the number one.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "How many days are in a week?",
+      "reply": "One day, a personal 30s in the world is a week.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "How many fingers are on one hand?",
+      "reply": "A-friendly is a common and a cycle is a cycle. It's a cycling and has a red and red.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is ten take away one?",
+      "reply": "Consider is a great way to get back to the same place.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of hot?",
+      "reply": "The most hot air is a hot, hot, and hot.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of big?",
+      "reply": "The most popular ones is the most popular and has the most popular.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of up?",
+      "reply": "The most popular is the most popular thing in the world, with the other end of the most popular thing in the world is the most popular thing in the world.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of day?",
+      "reply": "The most popular weather is the most place to be.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of happy?",
+      "reply": "The most popular ones in the world is the most popular and has many different colors.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of fast?",
+      "reply": "The most popular-friendly is the most popular, with the most popular ones in the world.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of wet?",
+      "reply": "The most fat, fat, and fat are the same.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of open?",
+      "reply": "The most popular, full of toys in the world is the most popular and has many different colors.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of light?",
+      "reply": "The most is the most of the world, with the light of the light and light.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the opposite of full?",
+      "reply": "The most popular, full of different colors, and has a big, round of colors.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is a river?",
+      "reply": "A river is a place where people live in the river, where people live in the river, and animals.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is a tree?",
+      "reply": "A tree is a tree with a high branch and a low branch.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is rain?",
+      "reply": "A rain is a high of rain, with a high of a high of a high of the rain is low and low, while the rain is low and steep.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is the sun?",
+      "reply": "The sun is hot and hot, but it is hot in the air.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is a book?",
+      "reply": "A book is a book of a book that has a word on it. It is a book that has a word that says \"The word \"A\" is \"The word \"snes\" is \"The word \"snes\" by the word \"sin\" is \"The word \"st\" by the word \"snes\" by the word \"snes\"",
+      "stopped": false
+    },
+    {
+      "correct": false,
+      "question": "What is a house?",
+      "reply": "A house is a place where you can see a house or a house, like a house or a house.",
+      "stopped": true
+    },
+    {
+      "correct": true,
+      "question": "What is a chair?",
+      "reply": "A chair is a place where you can sit on top of the table, which is a place where you can sit on the floor and sit on the floor.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is a baby?",
+      "reply": "A baby is a baby. It is a baby.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is a school?",
+      "reply": "A school is a classic. It's a classic and has a big heart and a loud noise.",
+      "stopped": true
+    },
+    {
+      "correct": false,
+      "question": "What is a doctor?",
+      "reply": "A doctor is a doctor who is a doctor who is a doctor. He is a doctor who is a doctor and a doctor is a doctor. He is a doctor who is a doctor and a doctor. He is a doctor who is a doctor and a doctor.",
+      "stopped": true
+    }
+  ],
+  "chat_score": 0.06,
+  "chat_stopped": 0.96,
+  "perplexity": 69.68061491082986,
+  "samples": [
+    "Once upon a time, there was a little dog named Max. Max loved to run and play all day. One day, Max went for a walk in the park. He saw a big tree and thought, \"I want to play hide and seek with me!\"\nAs Max ran, he found a long stick. He tried to find the stick and look for the stick in the tree. He found the stick under the tree and put it down to protect his fur. The stick was a very useful stick. It was a very good time to find the stick.\nWhen Max found the stick, he showed it to his friend, Cat. Cat",
+    "One day, a girl named Lily went to the park and saw a girl named Lily. Lily was sad because she lost her ball. The ball was stuck in a tree, and it was stuck in a tree. Lily wanted to help the ball get back to Lily.\nLily and the ball climbed down the tree together. They pulled on the ball and the ball out of the tree. They both climbed down the tree to get the ball out. Lily was happy that the ball was free. She said, \"Thank you, Lily! I hope you get the ball back.\" From that day on, they all were best friends and played together.",
+    "Tom had a big red ball. He liked to kick it up and down the ladder. He was very happy with his ball. It was a fun and easy to learn.\nOne day, the ball rolled into a house. The door was locked, but it did not work. The ball was sad to see the door door door. It tried to calm the door and the door open. The ball went through and drove, but it could not move.\nThe ball opened the door door and the ball fell out. It was very happy to be on the door and down. It was a good idea to bend down the stairs again",
+    "The little cat was sad because it had no friends to play with. It asked its friend, the dog, \"Can you help me find any friends to play?\" The friend was happy to help and said, \"Yes, I can help you find friends to follow. If you'd find something a friend, you might want to hear about a friend or a friend.<|end|>Yes, look for one friend to play with, but some friends may still follow the number.<|end|>To meet a friend, you might feel more while looking for each friend.<|end|>Yes, a friend is known for her. Bewber, a",
+    "It was a sunny day, so the children played under a soft, sunny yard.<|end|>There were many people playing, but some people never wanted to join them. They often ask their parents if they can meet a person who can talk to their home and help them.<|end|>A few days, some people can remember their visitings, but they can also be sold if they are not for them.<|end|>Yes, there are many options to change their muscles and animals, as they can stay assative and free to remember.<|end|>Yes, many things like playing with toys, all consider looking out the other personal food that",
+    "Once there was a bird who could not fly. This bird could speak, but it could still be satf ever could. It was an idea to ask the other birds if they had to work together.<|end|>As they did, they could see one far away from one side to another.<|end|>As the other birds, one of the most animals is searching for each other to breathe. Many animals like the other birds, the small horses, and the quick rabbits, which are all different colors and shapes. They can make the whole world a few times and if the game will leave you.<|end|>You can also find a good one if you",
+    "Mia and her mom went to the shop to buy some food and treats. They made a big, small own sandwich with a small piece of paper and draw with a small cloth to write down.<|end|>That's a great time for a week. You can also have a fun day with her friends.<|end|>That's a great idea! Good luck with your modern table and a warm place to relax and enjoy a tasty treat.<|end|>Start with a cozy table and a warm bath, and it can also be great for your young children.<|end|>You can look for the perfect pet screen or the shiny water for your family.<|end|>You'",
+    "The old man had a small boat. Every morning he would take a walk to the beach to enjoy the summer. One day, he was in the garden for a fun holiday. He noticed that the beach was hot in the sand and the sand. It was a hot summer day and he was inspeving.<|end|>Yes, the sun is setting. It's large and quiet, clear.<|end|>Yes, the sun is shining so bright. It's a hot day outside that is warm and sustrationiity.<|end|>Yes, there are some sunciate in the desert. The sun is hot in the weather, playing",
+    "Ben found a shiny box under his bed. Inside the box, there were more \"I want to share with!\" And that's the most important thing to share.<|end|>Wom better than just a box, especially in a box.<|end|>We should share with our friends, and enjoy the sun, which can be friends with them.<|end|>New abitude is a great way to share with friends and share with friends.<|end|>Yes, that's a great choice. This's why sharing is how to share and be kind to others.<|end|>Mhere is known for sharing and being kind to others.<|end|>I'd be happy to",
+    "A little rabbit lived in a hole near the big tree. One night, the cave was closed very still. A little bunny was scared, but he wanted to know what was there. The rabbit asked the bunny, \"Can you help me get there? I can help you today.<|end|>You can try it on our journey on your out of your hole, and then push over your back to the end of your trip.<|end|>Yes, hold your luck and go to bed.<|end|>You can do it by using your guitar, or try to make it better to enter your home to make sure your dream would be over soon.<|end|>That's the right warning of",
+    "\"Can I play with you?\" asked the small bear. \"Yes, you can play with me on your back,\" said the small bear.\nThe small bear and the small bear played together all day. They had so much fun. The small bear would always be there to help, making the same noise and having a fun day. They were a great team, and the small bear was always there to help.\nAs the small bear and the small bear played together, they were both very happy. They laughed and played until the sun went down. After playing, they put on their good behavior and went to bed, ready for a new day of",
+    "The rain fell all day, and Sam had a great time. The rain was still clear, but it had a great time.<|end|>If the rain is dry, it would rain or rain, but it's also a good idea to stay dry.<|end|>A storm may stay icy at least a week, but it's best to stay dry, even if it's going to rain.<|end|>If the rain is slippery, it's best to stay dry during the day.<|end|>Yes, it can be a good choice for your rain. It's also a good idea to stay dry when it's not hot outside",
+    "Anna loved to draw. One day she drew was to draw a big, delicious carrot. But there were many bitter girls in the house next door.<|end|>There are many chicken, but a big cow, and a spicy carrot is a bowl of mainic chicken.<|end|>Wind carrots are usually fresh, but some of the other chicken are good forriitations. It's easy to make with the best mouthers, so it's it.<|end|>Yes, the best brown sauce is great for the chicken. It helps the chicken with fish, brown rice, and bonds.<|end|>You can also try using a small",
+    "There was a frog who wanted to jump over a big mess. He had a small pieces of plates, so he decided to jump on it. He put the bowl on the floor and grabbed it with all the heavy pieces. The bowl was not used to, but it was still used to stand up. It was hard at first, but it was still used for watching the wall. The wall kept pushing and jumping, and it made it easier to jump over easily.<|end|>Mowerly, it could do it!<|end|>Yes, it was safe. You could jump in it, like slow on its own to jump.<|end|>It was great",
+    "The baby duck lost his mother. He looked and looked but couldn't find him. He called out, \"Hi! How can I help you today?<|end|>Yes, many treasures like playing with small computers or taking on rests. They'll like their seatlys and have a great time together.<|end|>Yes, there are many things to do. Some popular ones include Ments, Aprolan, and New Bo excht. They all work together and build a more cozy nap.<|end|>Yes, the For a few days, there are many schedules. Theseulions",
+    "Once upon a time, a kind queen lived in a small house. She was an honest queen and loved to share her toys with others. One day, she saw a big fire near her home. It was a thief! The thief was a fast, but it was nice. The cat was faster than the man.\nThe queen had an idea. She would mix water on the thief. The thief made the house even bigger and more open. The thief was happy to be a good friend. They both smiled at each other and became best friends. The children in the nation played together every day, and they were never ignorant again.",
+    "Jack was scared of the dark, but he was very brave. He didn't want to give up and find out where the storm is coming. The storm'ssrllisor is still standing, but the storm has won't stop. This is a foolish thing to go to sleep, and it can be hard to wake up.<|end|>Yes, it's not the have to leave the storm. The storm won't hurt the natural storm.<|end|>You're right. It's not so scary after all.<|end|>That's more important than the dangerous storm.<|end|>Nr axes",
+    "The two friends found a big hill and decided to climb the hill. They were both very happy to have found the hill and had a great time together. num soon-cial hilling the hill's own, and it's best to share it with others.<|end|>You could have more fun by standing on the hill without asking if you're busy and it's best to always share with your friends.<|end|>Yes, share with everyone can be honest and share goodness.<|end|>You can also try sharing the key and offer the time to learn and more.<|end|>You can also play a safe and friendly friend for others on",
+    "Every day after school, the boy fed the board, and even the poor bird. They all lived happily ever after.",
+    "The little girl opened the door and saw the house. Inside, there was a big slide of toys. There were two toys that were hers, but one of the same one to another. The one of the best toy they had ever seen!<|end|>The two other toys were both very good friends. They played together all day, taking turns making the most different toys in the world.<|end|>lter the most important toy is to be a regular cat and just have a simple one, such as the right.<|end|>In the end, the most important thing is to share with others.<|end|>You can be more comfortable with each other and"
+  ],
+  "unigram_loss": 6.377530413088701,
+  "val_loss": 4.243922157287598
+}
