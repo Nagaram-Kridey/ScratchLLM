@@ -6,7 +6,7 @@ from scratchllm.config import ModelConfig, load_config
 def test_tiny_config():
     model, train = load_config("configs/tiny.toml")
     assert model == ModelConfig(8, 384, 6, 8192, 512)
-    assert train.max_steps == 5000
+    assert train.max_steps == 1784  # eight hours at the measured laptop speed
 
 
 def test_target_config():
