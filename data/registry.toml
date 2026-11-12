@@ -1,2 +1,38 @@
 # One [[dataset]] table per dataset, each with [[dataset.file]] entries.
 # Add a dataset only after reading its licence from its primary page.
+
+# Pretraining text for the tiny model. Stories are separated by <|endoftext|>.
+[[dataset]]
+id = "tinystories"
+url = "https://huggingface.co/datasets/roneneldan/TinyStories"
+revision = "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64"
+licence = "CDLA-Sharing-1.0"
+licence_url = "https://cdla.dev/sharing-1-0/"
+
+[[dataset.file]]
+name = "TinyStoriesV2-GPT4-train.txt"
+size = 2227753162
+sha256 = "6418d412de72888f52b5142c761ac21a582f7d1166f0bfbdb5f03ccfdec90443"
+
+[[dataset.file]]
+name = "TinyStoriesV2-GPT4-valid.txt"
+size = 22502601
+sha256 = "6874bae9a4c1a4e7edcf0e53b86c17817e9cf881fc75ff2368da457b80c0585d"
+
+# Chat tuning for the tiny model. Files sit under data/ in the source repository.
+[[dataset]]
+id = "everyday-conversations"
+url = "https://huggingface.co/datasets/HuggingFaceTB/everyday-conversations-llama3.1-2k"
+revision = "14f543216b9ba42b6b951dc5bd199460d193b162"
+licence = "Apache-2.0"
+licence_url = "https://www.apache.org/licenses/LICENSE-2.0"
+
+[[dataset.file]]
+name = "train_sft-00000-of-00001.parquet"
+size = 2050609
+sha256 = "4750214d12b4b92d07fca953e0b5cc59e313c575282d08b605c639aa87531daa"
+
+[[dataset.file]]
+name = "test_sft-00000-of-00001.parquet"
+size = 123671
+sha256 = "9a6dd47c31ce940f36ced9eba2a733a0a0035ef514158c68739073e043382adc"
