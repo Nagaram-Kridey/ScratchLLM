@@ -36,3 +36,33 @@ sha256 = "4750214d12b4b92d07fca953e0b5cc59e313c575282d08b605c639aa87531daa"
 name = "test_sft-00000-of-00001.parquet"
 size = 123671
 sha256 = "9a6dd47c31ce940f36ced9eba2a733a0a0035ef514158c68739073e043382adc"
+
+# Pretraining text for the small model: the first 4 of 14 files of sample-10BT.
+# Files sit under sample/10BT/ in the source repository; text is in the "text" column.
+# Common Crawl's terms of use also apply: https://commoncrawl.org/terms-of-use
+[[dataset]]
+id = "fineweb-edu"
+url = "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
+revision = "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9"
+licence = "ODC-By-1.0 (plus Common Crawl terms of use)"
+licence_url = "https://opendatacommons.org/licenses/by/1-0/"
+
+[[dataset.file]]
+name = "000_00000.parquet"
+size = 2152819114
+sha256 = "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871"
+
+[[dataset.file]]
+name = "001_00000.parquet"
+size = 2152222432
+sha256 = "3fcf2dc69cd52503986276d3d2d26a8c356d0f2ea28a0de4fdbda8cf87755693"
+
+[[dataset.file]]
+name = "002_00000.parquet"
+size = 2151796315
+sha256 = "547ae182d132c9f06b6ce63149567208ea9f57630bfd9b1a2938e504f0c9ebd7"
+
+[[dataset.file]]
+name = "003_00000.parquet"
+size = 2152437524
+sha256 = "22184e6eb25759ddd97783751ffc73e1705dfa2542e630dae1f2a8bac8ee6ddb"
