@@ -1,0 +1,18 @@
+# Free-tier model: trains on Kaggle's 30 free T4 hours a week.
+[model]
+n_layers = 12
+d_model = 768
+n_heads = 12
+vocab_size = 32000
+context = 1024
+
+[train]
+batch_size = 8
+grad_accum = 16
+lr = 6e-4
+warmup_steps = 500
+max_steps = 19000
+weight_decay = 0.1
+eval_interval = 10
+eval_batches = 2
+seed = 1337
