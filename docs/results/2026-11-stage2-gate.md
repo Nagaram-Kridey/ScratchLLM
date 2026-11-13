@@ -38,3 +38,22 @@ A preemptible machine can be stopped by Nebius at any time. Atomic checkpoints a
 1. **Measure on the real GPU.** The H100 figure above is an estimate. Thirty minutes on a preemptible H100 costs about $0.40 and replaces it with a measurement.
 2. **Data.** TinyStories has 534 million tokens. 13.1 billion tokens of general English needs a larger corpus, licence-checked like the Stage 1 sets, and about 26 GB of token files.
 3. **Owner's choice at the gate:** approve a fixed amount, choose a smaller model, or stop.
+
+## Free option: the `small` model (owner chose to stay at ₹0)
+
+| | |
+|---|---|
+| Model | `configs/small.toml`: 12 layers, width 768, 12 heads, context 1024, vocabulary 32,000: 109,529,856 parameters |
+| Where | the same free Kaggle T4, float16 |
+| Result | 14,957, 13,544 and 13,075 tokens/s over steps 1–10, 11–20 and 21–30 |
+| Planned run | 19,000 steps × 131,072 tokens = 2.49 billion tokens (about 23 tokens per parameter) |
+| Time at 13,000 tokens/s | about 53 GPU-hours: two weeks of Kaggle's 30 free hours, in 12-hour sessions |
+| Cost | ₹0 |
+
+The speed fell over the three readings, so the plan uses the slowest.
+
+### Data for `small`
+
+The candidate is FineWeb-Edu `sample-10BT` (`HuggingFaceFW/fineweb-edu` at `87f09149ef4734204d70ed1d046ddc9ca3f2b8f9`). It has 14 Parquet files, the first 2.15 GB, with a `text` column. About 2.5 billion tokens would need roughly a quarter to a third of it.
+
+Its card says: ODC-By 1.0, "also subject to CommonCrawl's Terms of Use". ODC-By needs attribution only. Common Crawl's terms add that users must respect the copyrights of the third parties whose pages were crawled, and they recommend legal advice before use. The text itself is web pages whose own copyright stays with their authors. Under the project rule that anything unclear is left out, this needs the owner's decision before download.
