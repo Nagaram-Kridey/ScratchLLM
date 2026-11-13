@@ -20,6 +20,8 @@ DATA=/tmp/data
 nvidia-smi --query-gpu=name,memory.total --format=csv
 # Loss lines only appear every 250 steps (about 40 minutes), so show GPU use every 5 minutes.
 (while sleep 300; do nvidia-smi --query-gpu=index,utilization.gpu,memory.used --format=csv,noheader; done) &
+MONITOR=$!
+trap 'kill $MONITOR' EXIT
 mkdir -p "$RUN"
 cp "$TOKENIZER" /kaggle/working/tokenizer.json
 if [ -n "$PREVIOUS" ]; then
