@@ -30,8 +30,17 @@ def pick_device() -> str:
     return "cuda" if torch.cuda.is_available() else "cpu"
 
 
+def amp_dtype(device: str):
+    """The mixed-precision type for a device: bfloat16 where the GPU has it natively,
+    float16 on older GPUs (such as P100 and T4), none on CPU."""
+    if device != "cuda":
+        return None
+    return torch.bfloat16 if torch.cuda.is_bf16_supported(including_emulation=False) else torch.float16
+
+
 def _autocast(device: str):
-    return torch.autocast("cuda", dtype=torch.bfloat16, enabled=device == "cuda")
+    dtype = amp_dtype(device)
+    return torch.autocast("cuda", dtype=dtype or torch.bfloat16, enabled=dtype is not None)
 
 
 def _optimizer(model: Model, cfg: TrainConfig) -> torch.optim.AdamW:
@@ -44,12 +53,13 @@ def _optimizer(model: Model, cfg: TrainConfig) -> torch.optim.AdamW:
     return torch.optim.AdamW(groups, lr=cfg.lr, betas=(0.9, 0.95))
 
 
-def _save(path: Path, model, optimizer, step, gen, model_cfg, train_cfg) -> None:
+def _save(path: Path, model, optimizer, scaler, step, gen, model_cfg, train_cfg) -> None:
     tmp = path.with_name(path.name + ".tmp")
     torch.save(
         {
             "model": model.state_dict(),
             "optimizer": optimizer.state_dict(),
+            "scaler": scaler.state_dict(),
             "step": step,
             "generator": gen.get_state(),
             "model_cfg": asdict(model_cfg),
@@ -113,6 +123,8 @@ def train(
     torch.manual_seed(train_cfg.seed)
     model = Model(model_cfg).to(device)
     optimizer = _optimizer(model, train_cfg)
+    # float16 needs loss scaling so small gradients do not round to zero; elsewhere this does nothing.
+    scaler = torch.amp.GradScaler("cuda", enabled=amp_dtype(device) == torch.float16)
     gen = torch.Generator().manual_seed(train_cfg.seed)
     step = 0
 
@@ -124,6 +136,8 @@ def train(
             raise ValueError(f"the checkpoint in {run_dir} was trained with a different model config")
         model.load_state_dict(ckpt["model"])
         optimizer.load_state_dict(ckpt["optimizer"])
+        if ckpt.get("scaler"):
+            scaler.load_state_dict(ckpt["scaler"])
         gen.set_state(ckpt["generator"])
         step = ckpt["step"]
     else:
@@ -154,10 +168,12 @@ def train(
                 raise TrainingDiverged(
                     f"loss became {loss.item()} at step {step}; the last saved checkpoint is untouched"
                 )
-            (loss / train_cfg.grad_accum).backward()
+            scaler.scale(loss / train_cfg.grad_accum).backward()
             step_loss += loss.item() / train_cfg.grad_accum
+        scaler.unscale_(optimizer)
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-        optimizer.step()
+        scaler.step(optimizer)  # skips the update if float16 gradients overflowed
+        scaler.update()
         interval_loss += step_loss
         interval_steps += 1
 
@@ -176,5 +192,5 @@ def train(
             with open(log_path, "a", encoding="utf-8") as f:
                 f.write(json.dumps(entry) + "\n")
             print(json.dumps(entry), flush=True)
-            _save(ckpt_path, model, optimizer, step, gen, model_cfg, train_cfg)
+            _save(ckpt_path, model, optimizer, scaler, step, gen, model_cfg, train_cfg)
             interval_loss, interval_steps, interval_start = 0.0, 0, time.perf_counter()

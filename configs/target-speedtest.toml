@@ -1,0 +1,19 @@
+# Speed test of the target model on a 16 GB GPU: 1 sequence at a time, 64 accumulated,
+# so each step still sees 131,072 tokens as in target.toml.
+[model]
+n_layers = 24
+d_model = 1280
+n_heads = 20
+vocab_size = 32000
+context = 2048
+
+[train]
+batch_size = 1
+grad_accum = 64
+lr = 3e-4
+warmup_steps = 2000
+max_steps = 100000
+weight_decay = 0.1
+eval_interval = 10
+eval_batches = 2
+seed = 1337

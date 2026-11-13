@@ -102,3 +102,13 @@ def test_load_model(data_dir, tmp_path):
     assert not model.training
     state = _weights(tmp_path / "run")
     assert torch.equal(model.embed.weight, state["embed.weight"])
+
+
+def test_amp_dtype_by_device(monkeypatch):
+    from scratchllm import train as t
+
+    assert t.amp_dtype("cpu") is None
+    monkeypatch.setattr(torch.cuda, "is_bf16_supported", lambda including_emulation=True: True)
+    assert t.amp_dtype("cuda") is torch.bfloat16
+    monkeypatch.setattr(torch.cuda, "is_bf16_supported", lambda including_emulation=True: False)
+    assert t.amp_dtype("cuda") is torch.float16
