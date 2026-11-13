@@ -138,7 +138,8 @@ def train(
         optimizer.load_state_dict(ckpt["optimizer"])
         if ckpt.get("scaler"):
             scaler.load_state_dict(ckpt["scaler"])
-        gen.set_state(ckpt["generator"])
+        # _load maps every tensor to the training device, but the batch generator lives on the CPU.
+        gen.set_state(ckpt["generator"].cpu())
         step = ckpt["step"]
     else:
         run_dir.mkdir(parents=True, exist_ok=True)
